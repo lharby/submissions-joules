@@ -1,0 +1,25 @@
+@import './../../scss/partials/variables';
+@import './../../scss/partials/mixins';
+
+.header {
+    background-color: $pink;
+    color: $white;
+
+    ul {
+        display: flex;
+    }
+
+    a {
+        @include hover(all, 400ms, ease-in);
+        @include padding-xy;
+        color: $white;
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+            @include hover(all, 400ms, ease-in);
+            background-color: darken($pink, 5);
+            color: $white;
+        }
+    }
+}

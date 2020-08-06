@@ -1,0 +1,42 @@
+
+/*
+* Product Application
+* Client: Joules clothing
+* Date: Aug 2020
+* Copyright (C) Luke Harby
+* mailto:lharby@gmail.com
+*/
+
+/* utils */
+
+.full-width {
+    width: 100%;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.pos-fix {
+    position: fixed;
+}
+
+.xs-font {
+    font-size: 80%;
+}
+
+.default-padding-xy {
+    padding: $default-spacer;
+}
+
+.default-padding-x {
+    padding: $default-spacer 0;
+}
+
+.default-padding-y {
+    padding: 0 $default-spacer;
+}
+
+.no-link {
+    text-decoration: none;
+}

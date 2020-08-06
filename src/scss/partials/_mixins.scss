@@ -1,0 +1,39 @@
+
+/*
+* Product Application
+* Client: Wunderman Thompson Commerce
+* Date: Aug 2019
+* Copyright (C) Luke Harby
+* mailto:lharby@gmail.com
+*/
+
+/* mixins */
+@mixin hover($type, $speed, $ease) {
+    -webkit-transition:$type $speed $ease;
+    -moz-transition:$type $speed $ease;
+    -ms-transition:$type $speed $ease;
+    -o-transition:$type $speed $ease;
+    transition:$type $speed $ease;
+}
+
+@mixin padding-xy {
+    padding: $default-spacer;
+}
+
+@mixin desktop($width) {
+    @media screen and (min-width: $width + 1) {
+        @content;
+    }
+}
+
+@mixin tablet($width) {
+    @media screen and (min-width: 1px) and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin mobile($min, $max) {
+    @media screen and (min-width: $min) and (max-width: $max - 1) {
+        @content;
+    }
+}

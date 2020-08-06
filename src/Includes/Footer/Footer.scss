@@ -1,0 +1,34 @@
+@import './../../scss/partials/variables';
+
+footer {
+    background-color: $mid-grey;
+    bottom: 0;
+    padding: $default-padding;
+    position: fixed;
+
+    span {
+        color: $white;
+    }
+
+    .copyright {
+        right: 2rem;
+        bottom: 0.4rem;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            flex-direction: row;
+
+            a:link,
+            a:visited {
+                color: $white;
+            }
+        }
+    }
+
+    li {
+        margin-right: $default-spacer;
+    }
+}
