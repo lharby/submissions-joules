@@ -6,6 +6,6 @@ Webpack
 SASS
 React
 
-In the terminal execute `npm run dev` for development
+In the terminal execute `npm run dev` for development. The app will open on `http://localhost:8282`
 
 Or `npm run build` for a full build
