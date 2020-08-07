@@ -7,7 +7,7 @@ const MainNavigation = () => {
         <header className="header">
             <MainNavigationItems />
         </header>
-        );
-    };
+    );
+};
 
 export default MainNavigation;
