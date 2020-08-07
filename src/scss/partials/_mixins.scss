@@ -1,8 +1,8 @@
 
 /*
 * Product Application
-* Client: Wunderman Thompson Commerce
-* Date: Aug 2019
+* Client: Joules clothing
+* Date: Aug 2020
 * Copyright (C) Luke Harby
 * mailto:lharby@gmail.com
 */
@@ -35,5 +35,13 @@
 @mixin mobile($min, $max) {
     @media screen and (min-width: $min) and (max-width: $max - 1) {
         @content;
+    }
+}
+
+@mixin clearfix {
+    &:after {
+        clear: both;
+        content: '';
+        display: table;
     }
 }
