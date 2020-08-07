@@ -17,7 +17,7 @@ const navItem = [
     },
     {
         text: 'GIRLS',
-        link: '/girs/'
+        link: '/girls/'
     },
     {
         text: 'BOYS',
