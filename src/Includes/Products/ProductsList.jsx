@@ -28,6 +28,7 @@ const ProductsList = () => {
                             </a>
                         </li>
                         <li>{item.name}</li>
+                        <li>{item.price.formattedValue}</li>
                     </ul>
                 </li>
             ))}

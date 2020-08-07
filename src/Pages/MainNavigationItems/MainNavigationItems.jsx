@@ -46,7 +46,12 @@ const MainNavigationItems = () => {
     return (
         <nav>
             <ul>
-                {navItems}
+                <li>
+                    <a href="#" className="mobile-visible ion-navicon"></a>
+                    <ul className="mobile-hidden">
+                        {navItems}
+                    </ul>
+                </li>
             </ul>
         </nav>
     );

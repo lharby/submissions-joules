@@ -8,10 +8,23 @@
 */
 
 /* response */
-.desktop-hidden {
+.mobile-hidden {
     display: none;
 }
 
-.desktop-visible {
+.mobile-visible {
     display: block;
+}
+
+@include tablet($tablet-size) {
+
+    .mobile-hidden,
+    .mobile-visible {
+        display: none;
+    }
+
+    .desktop-hidden,
+    .desktop-visible {
+        display: block;
+    }
 }
