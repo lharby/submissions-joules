@@ -17,19 +17,19 @@
 }
 
 @mixin desktop($width) {
-    @media screen and (min-width: $width + 1) {
+    @media screen and (min-width: $width) {
         @content;
     }
 }
 
 @mixin tablet($width) {
-    @media screen and (min-width: 1px) and (max-width: $width) {
+    @media screen and (min-width: $width) {
         @content;
     }
 }
 
-@mixin mobile($min, $max) {
-    @media screen and (min-width: $min) and (max-width: $max - 1) {
+@mixin mobile($max) {
+    @media screen and (max-width: $width) {
         @content;
     }
 }

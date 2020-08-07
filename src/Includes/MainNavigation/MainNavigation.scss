@@ -6,15 +6,14 @@
     color: $white;
 
     ul {
-        display: flex;
-        justify-content: center;
+        display: initial;
     }
 
     a {
         @include hover(all, 200ms, ease-in);
-        @include padding-xy;
         color: $white;
         display: block;
+        padding: $default-padding;
         text-decoration: none;
 
         &:hover {
@@ -30,10 +29,11 @@
     .header {
 
         ul {
-            display: initial;
+            display: flex;
+            justify-content: center;
 
             a {
-                padding: $default-padding;
+                @include padding-xy;
             }
         }
     }

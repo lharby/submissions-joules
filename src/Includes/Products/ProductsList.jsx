@@ -20,8 +20,15 @@ const ProductsList = () => {
     return (
         <ul className="product-list">
             {data.map(item => (
-                <li key={item.code}>
-                    <a href={item.url}>{item.name}</a>
+                <li key={item.code} className="col">
+                    <ul>
+                        <li>
+                            <a href={item.url}>
+                                <img src={item.images[1].url} alt="" />
+                            </a>
+                        </li>
+                        <li>{item.name}</li>
+                    </ul>
                 </li>
             ))}
         </ul>
