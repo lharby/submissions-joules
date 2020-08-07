@@ -1,5 +1,9 @@
 @import './../../scss/partials/variables';
 
 .product-list {
-    background-color: $white;
+
+    a {
+        color: $pink;
+        text-decoration: none;
+    }
 }

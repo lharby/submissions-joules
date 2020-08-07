@@ -5,7 +5,7 @@ import Footer from './Includes/Footer/Footer.jsx';
 
 function App(props) {
     return (
-        <div className="App wrapper clearfix">
+        <div className="app clearfix">
             <MainNavigation />
             <ProductsPresenter />
             <Footer />

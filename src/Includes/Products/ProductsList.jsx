@@ -6,20 +6,17 @@ import './ProductsList.scss';
 const ProductsList = () => {
     const [data, setData] = useState([]);
     const pathName = document.location.pathname.split('/')[1].toUpperCase();
-
     const fetchData = () => {
         const result = axios
             .get(testDataURL)
             .then(res => {
                 setData(res.data.results);
-                console.log('fetchData products:', res.data.results);
             })
     };
-
     useEffect(() => {
+        document.title = `Joules ${pathName}`;
         fetchData();
     }, []);
-
     return (
         <ul className="product-list">
             {data.map(item => (
