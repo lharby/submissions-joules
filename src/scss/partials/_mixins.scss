@@ -9,11 +9,7 @@
 
 /* mixins */
 @mixin hover($type, $speed, $ease) {
-    -webkit-transition:$type $speed $ease;
-    -moz-transition:$type $speed $ease;
-    -ms-transition:$type $speed $ease;
-    -o-transition:$type $speed $ease;
-    transition:$type $speed $ease;
+    transition: $type $speed $ease;
 }
 
 @mixin padding-xy {

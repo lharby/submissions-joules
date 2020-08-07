@@ -11,8 +11,8 @@ footer {
     }
 
     .copyright {
-        right: 1rem;
         bottom: 0.4rem;
+        right: 1rem;
     }
 
     ul {
@@ -20,15 +20,12 @@ footer {
 
         li {
             flex-direction: row;
-
-            a:link,
-            a:visited {
-                color: $white;
-            }
+            margin-right: $default-spacer;
         }
-    }
 
-    li {
-        margin-right: $default-spacer;
+        a:link,
+        a:visited {
+            color: $white;
+        }
     }
 }
