@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProductsHeader = () => {
     return (
-        <p className="heading">Products</p>
+        <h1 className="heading text-center">Products</h1>
     );
 }
 

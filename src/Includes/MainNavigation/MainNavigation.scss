@@ -9,6 +9,7 @@
     a {
         @include hover(all, 200ms, ease-in);
         color: $white;
+        font-family: $heading-font;
         padding: $default-padding;
         text-decoration: none;
 
