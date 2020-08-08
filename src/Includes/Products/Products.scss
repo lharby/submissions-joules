@@ -5,11 +5,13 @@
     @include padding-xy;
     background-color: $palest-grey;
     height: 100%;
+    padding-top: $default-spacer * 2;
 }
 
 @include tablet($tablet-size) {
 
     .products {
         padding: $default-padding;
+        padding-top: $default-spacer * 4;
     }
 }

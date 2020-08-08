@@ -4,6 +4,7 @@
 .header {
     background-color: $pink;
     color: $white;
+    z-index: $z-high;
 
     a {
         @include hover(all, 200ms, ease-in);
@@ -26,20 +27,38 @@
         }
     }
 
-    .ion-navicon {
+    .icon-navigation {
+        display: flex;
+        right: $default-spacer;
+        top: 0.5rem;
+
+        a {
+            background-color: transparent;
+        }
+    }
+
+    .ion-navicon,
+    .icon-navigation a {
         font-size: $icon-font-size;
     }
 }
 
 @include tablet($tablet-size) {
 
-    .header ul {
-        display: flex;
-        justify-content: center;
+    .header {
 
-        ul a {
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-navigation a {
             @include padding-xy;
             display: block;
+        }
+
+        .icon-navigation {
+            top: 1.4rem;
         }
     }
 }
