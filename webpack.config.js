@@ -56,5 +56,5 @@ module.exports = {
         ]
     },
     watch: true,
-    mode: 'none'
+    mode: 'development'
 };

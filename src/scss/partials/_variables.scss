@@ -10,11 +10,12 @@
 /* variables */
 
 /* colours */
-$pink: #DC218A;
-$palest-grey: #F9F9F9;
-$dark-grey: #444444;
-$mid-grey: #A5A5A5;
-$white: #FFFFFF;
+$pink: #dc218a;
+$red: #f60;
+$palest-grey: #f9f9f9;
+$dark-grey: #444;
+$mid-grey: #a5a5a5;
+$white: #fff;
 
 /* responsive */
 $mobile-size: 740px !default;
@@ -24,3 +25,8 @@ $desktop-size: 1024px !default;
 /* sizing */
 $default-padding: 6px 12px;
 $default-spacer: 2rem;
+$icon-font-size: 2rem;
+
+/* z-index */
+$z-low: -1;
+$z-high: 1;

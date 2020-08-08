@@ -4,7 +4,7 @@ import './MainNavigation.scss';
 
 const MainNavigation = () => {
     return (
-        <header className="header">
+        <header className="header pos-fix full-width">
             <MainNavigationItems />
         </header>
     );

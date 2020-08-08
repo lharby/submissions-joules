@@ -1,0 +1,47 @@
+@import '../../scss/partials/variables';
+@import '../../scss/partials/mixins';
+
+.product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: $default-spacer * 5;
+
+    > li {
+        margin-bottom: $default-spacer * 2;
+        padding: $default-padding;
+        width: 50%;
+    }
+
+    a {
+        @include hover(all, 200ms, ease-in);
+        color: $pink;
+        opacity: 0.8;
+        text-decoration: none;
+
+        &:hover {
+            @include hover(all, 200ms, ease-in);
+            opacity: 1;
+        }
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@include tablet($tablet-size) {
+
+    .product-list {
+
+        > li {
+            width: 25%;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+}

@@ -1,12 +1,17 @@
-@import './../../scss/partials/variables';
-@import './../../scss/partials/mixins';
+@import '../../scss/partials/variables';
+@import '../../scss/partials/mixins';
 
 .products {
     @include padding-xy;
     background-color: $palest-grey;
-    height: 100vh;
+    height: 100%;
+    padding-top: $default-spacer * 2;
 }
 
 @include tablet($tablet-size) {
 
+    .products {
+        padding: $default-padding;
+        padding-top: $default-spacer * 4;
+    }
 }

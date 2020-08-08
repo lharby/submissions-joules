@@ -1,20 +1,15 @@
-@import './../../scss/partials/variables';
-@import './../../scss/partials/mixins';
+@import '../../scss/partials/variables';
+@import '../../scss/partials/mixins';
 
 .header {
     background-color: $pink;
     color: $white;
-
-    ul {
-        display: flex;
-        justify-content: center;
-    }
+    z-index: $z-high;
 
     a {
         @include hover(all, 200ms, ease-in);
-        @include padding-xy;
         color: $white;
-        display: block;
+        padding: $default-padding;
         text-decoration: none;
 
         &:hover {
@@ -23,6 +18,29 @@
             color: $white;
         }
     }
+
+    .sale {
+
+        &:hover {
+            background-color: $white;
+            color: $red;
+        }
+    }
+
+    .icon-navigation {
+        display: flex;
+        right: $default-spacer;
+        top: 0.5rem;
+
+        a {
+            background-color: transparent;
+        }
+    }
+
+    .ion-navicon,
+    .icon-navigation a {
+        font-size: $icon-font-size;
+    }
 }
 
 @include tablet($tablet-size) {
@@ -30,11 +48,17 @@
     .header {
 
         ul {
-            display: initial;
+            display: flex;
+            justify-content: center;
+        }
 
-            a {
-                padding: $default-padding;
-            }
+        .main-navigation a {
+            @include padding-xy;
+            display: block;
+        }
+
+        .icon-navigation {
+            top: 1.4rem;
         }
     }
 }
