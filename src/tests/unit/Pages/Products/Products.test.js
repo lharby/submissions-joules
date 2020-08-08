@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ProductsPresenter from '../../../../Pages/Products/ProductsPresenter.jsx';
+import ProductsPresenter from '../../../../Includes/Products/ProductsPresenter.jsx';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<ProductsPresenter />, div);
-  ReactDOM.unmountComponentAtNode(div);
+    const div = document.createElement('div');
+    ReactDOM.render(<ProductsPresenter />, div);
+    expect(div.querySelectorAll('.products').length).toBe(1);
+    ReactDOM.unmountComponentAtNode(div);
 });

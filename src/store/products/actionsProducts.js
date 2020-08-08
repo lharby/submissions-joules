@@ -1,11 +1,11 @@
 import axios from 'axios';
+import { testDataURL } from '../globlas/globals';
 
-const acGetProductsAjax = (payload, errored, loading) => {
+const acGetProductsAjax = () => {
     axios
-        .get('https://api.myjson.com/bins/1ykgs')
+        .get(testDataURL)
         .then((response) => {
-            payload = response.data;
-            console.log(payload);
+            return response.data;
         })
         .catch((errored) => {
             errored = true;

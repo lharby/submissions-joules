@@ -1,21 +1,22 @@
-
 import mockData from './data/mockData.json';
-const records = mockData.catalogEntryView;
+const results = mockData.results;
 
 describe('Return data from api', () => {
-  it('should match a certain data type and be populated', () => {
-    expect(records).toMatchObject({});
-    expect(records.length).toEqual(6);
-    expect(records.length).not.toEqual(10);
-  });
-  it('should have certain values and properties', () => {
-    const firstRecord = records[0];
-    expect(firstRecord.uniqueID).toBe('12672');
-    expect(firstRecord.name).toBe('Reading Tablet');
-  });
-  it('should return certain currency symbols', () => {
-    const firstRecord = records[0];
-    const item = firstRecord.price[0];
-    expect(item.currency).toBe('USD');
-  });
+    it('should match a certain data type and be populated', () => {
+        expect(results).toMatchObject({});
+        expect(results.length).toEqual(19);
+        expect(results.length).not.toEqual(10);
+    });
+    it('should have certain values and properties', () => {
+        const firstRecord = results[0];
+        expect(firstRecord.summary).toBe('Square Scarf');
+        expect(firstRecord.name).toBe('Neckerchief');
+        expect(firstRecord.name).not.toBe('Handkerchief');
+    });
+    it('should return certain currency symbols', () => {
+        const firstRecord = results[0];
+        const item = firstRecord.price;
+        expect(item.currencyIso).toBe('GBP');
+        expect(item.currencyIso).not.toBe('YEN');
+    });
 });

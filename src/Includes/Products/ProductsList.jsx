@@ -24,7 +24,7 @@ const ProductsList = () => {
                     <ul>
                         <li>
                             <a href={item.url}>
-                                <img src={item.images[1].url} alt="" />
+                                <img src={item.images[1].url} alt={item.name} />
                             </a>
                         </li>
                         <li>{item.name}</li>
