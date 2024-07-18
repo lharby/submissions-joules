@@ -3,6 +3,7 @@
 footer {
     background-color: $mid-grey;
     bottom: 0;
+    font-family: $heading-font;
     padding: $default-padding;
     position: fixed;
 
@@ -26,6 +27,11 @@ footer {
         a:link,
         a:visited {
             color: $white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

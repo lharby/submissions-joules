@@ -16,7 +16,7 @@ const ProductsList = () => {
     useEffect(() => {
         document.title = `Joules ${pathName}`;
         fetchData();
-    }, []);
+    }, [data]);
     return (
         <ul className="product-list">
             {data.map(item => (
